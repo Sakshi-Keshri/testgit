@@ -1,0 +1,423 @@
+Cloud enables sharing of resources remotely. Services can be 
+accessed remotely.
+
+Chracteristics of cloud:
+
+1. On demand service : Gmail service can be accessed from
+ anywhere and anytime using gmail account credentials.
+
+2. Scalability : servers can be scaled up and down as per our
+  requirement.
+
+3. Broad network Access
+
+4. Resource Pooling : All the resources are kept together like a 
+pool.You can use as many resources as you want.
+
+consider it like  a swimming pool. Person 1 wants a bucket of 
+water from pool wherea as person 2 wants two buckets of water
+from the pool.
+
+5. Measured services : To estimate how many persons visited 
+website on a particular day? How many laptops were purchased ?
+All these kinds of services are provided by cloud.
+
+
+
+Cloud Service Providers
+
+1. AWS
+2. Microsoft AZURE
+3. Google Cloud
+4. AliBaba
+5. Oracle........etc.
+
+
+
+Serices provided by cloud
+------------------------------------------------
+Layers based on which services are classified:
+
+
+Application 
+Data
+Runtime
+Middleware
+OS
+Virtualization
+Server
+Storage
+Network
+
+
+1. SaaS - From infra to the application , you have taken 
+ everything from cloud.
+
+
+Application 
+Data
+Runtime
+Middleware
+OS
+Virtualization
+Server
+Storage
+Network
+
+
+2. PaaS - you get infra + platform
+
+e.g. you want to work with MS Office, for that you need a hardware
+i.e. laptop (infra)  and a platform ( runtime environment) i.e.
+OS so that you can run/use MS Office App. on it.
+
+you are getting all of these in PaaS service.
+
+Runtime
+Middleware
+OS
+Virtualization
+Server
+Storage
+Network
+
+3. IaaS - you are getting all of these in IaaS service.
+ Infra means hardware.
+ Network means gateway,router,switches...etc.
+ Storage means memory space to save data. 
+ Server is needed to provide services. e.g. whatsapp server will
+ provide services like chatting, calling , etc.
+ So, network,storage and server all are being virtualized and 
+ is being provided by IaaS and  not physically.
+
+OS
+Virtualization
+Server
+Storage
+Network
+
+          
+
+CLOUD DEPLOYMENT MODELS
+---------------------------------------------------------------------
+
+1. Public ( AWS,Azure, Google Cloud)
+
+It is accessible to everyone, one can create an account and  get 
+access to the services.
+
+2. Private ( enterprise cloud)
+
+e.g. Dell created a private cloud to be used at its head office
+and branches across world.
+
+private clouds are more secure than public ones  but here  you 
+will have to manage everything by yourself.
+
+
+
+3. Hybrid Cloud (public + private)
+
+It is a combination of both public as well as private. e.g.
+An organization has stored some of its data on public cloud and
+some confidential data on private cloud and can give its access
+to some other person.
+
+
+
+
+Certifications
+--------------------------------------------------------------
+level 1 - AWS Solution Architect
+
+a. Associate
+b. Professional
+
+level 2 - AWS DevOps (developer + operations)
+
+a. Associate
+b. Professional
+
+level 3 - AWS SysOps (System admin + operations)
+
+a. Associate
+b. Professional
+
+
+
+
+
+
+Terms:
+------------------------------------------------------------------
+
+1. Instance : Virtual computing environment ( virtual server )
+
+2. AMI : Amazon Virtual Image (types of OS) 
+   Preconfigured templates for your instances.
+
+3. Instance Types : various configuration of CPU,memory,storage,
+and networking capacity for your instance known as instance types.
+
+4. Key-pairs  :  AWS generally provides two types of keys-public
+and private .Key-pairs are secure login information for your 
+instances.This means your instances are password protected.
+
+5. Instance Storage Volumes : Storage  volumes(space) for 
+temporary data that's deleted when you stop/terminate your
+instance.
+
+
+6.Elastic IP Address : Static IPv4 addrresses for dynamic cloud
+ computing.
+
+
+7. Regions  and availability zones : Regions are physical /
+ geographic locations across the world. Availability zones can 
+ be understood as data centers in the region. A region can have
+ multiple availability zones.
+
+
+
+EC 2 service : Elastic Cloud Computing 
+----------------------------------------------------------------
+Instance : virtual server for running application on Amazon AWS.
+It can be understood as tiny part of a large computer which has
+its own HD ,network connection,OS,etc . but it is all virtual.
+
+How will you get an instance (virtual server on AWS) ?
+
+> using EC2 , 
+
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that 
+provides resizable compute service in cloud , servers in 
+Amazon's data centers—that you use to build and host your 
+software systems.
+
+
+Why EC2 ?
+
+> because it is cost effective,scalable,flexible - no need to 
+set up anything , everything available with 100% configuration
+
+
+
+
+Types of instances :
+
+
+All reference types,memory optimized,storage optimized,micro 
+instances, General purpose, GPU reference( for graphics).
+
+
+
+
+Instance Pricing Models:
+
+1. On demand : pay for as long as you use 
+
+2. Dedicated : complete server is alloted to you , not sharable 
+
+3.On-spot :for short duration only, you pay the amount more than
+ the bit amount that some other individual has paid, in the mean
+ time if someone pays more than amount paid by you ,the instance
+ will be taken away from you. This is generally for testing 
+purpose.
+
+4. Reserved : you define time period for which you want the 
+instance, and pay for that.
+
+
+
+
+
+
+
+
+EC2 characteristics
+------------------------------------------------------------
+
+1.The word compute is important. virtual server is a computing
+resource. Computing means something that has processing power
+and ability to read and understand the instructions. 
+who can tell that 10 + 10 is 20 .If you give some code of C or 
+Java ,it can execute it and tell its output.
+
+
+2.Amazon EC2 provides scalable computing capacity in AWS cloud.
+You can use EC2 to launch as many or few instances as you need,
+configure security and networking and manage storage.
+
+
+
+3. It enables you to scale up/down the instances. This means 
+increasing the capacity and computing power of existing instance
+rather than increasing the number of instances.
+
+
+4. There are two storage options : EBS and instance store
+
+EBS ( Elastic BLock Store) : It is kept far from physical server.
+It is network attached. Server is kept at some other location 
+and EBS is located elsewhere . EBS is attached to the server
+through network.
+
+Instance Store volume is faster as it is directly attached to 
+the server. IT is expensive and only for large servers.
+
+It can be understood as laptop having SSD HD and an external
+memory storage for storing movies,etc.  
+
+SSD HD is Instance Store 
+external memory storage is EBS.
+
+
+
+5. Preconfigured templates are available known as Amazon Machine
+Image (AMI).
+
+
+
+6. Instance Types 
+
+  a. General purpose instance : balanced memory+CPU
+
+  b. compute optimized : more CPUs
+
+  c. High memory optimized : High RAM,uses nitro system
+     nitro syatem is a specialized hypervisor used for
+     virtualization which  utilizes your resources intelligently.
+
+  d. Storage optimized :low latency
+
+  e. Accelerated computing (GPU) : where performance is required ( games)
+
+  f. Memory optimized : More RAM
+
+
+
+
+
+INSTANCE TYPES
+------------------------------------------------------------------
+
+1. General Purpose Instances
+
+General Purpose instances provide a balance of compute,memory,
+and networking resources and canbe used for a variety of 
+workloads.
+You will get average configuration.
+
+Available in four sizes : Nano,small,medium,large
+
+
+3 servers:
+
+a. A series - A1
+(medium , large)
+
+b. M series - m4,ms,ms5ad,m5d
+(large)
+
+c. T series - T3c,T3,T2 (t2-micro- free tier)
+
+
+
+
+
+
+
+
+EC2 ACCESS
+------------------------------------------------------------------
+
+1. To access instances, you need a key and key pair name.
+
+2. You can download the private key only once.
+
+3. Public key is saved by AWS to match it to the key pair name 
+and private key when you try to login to the EC2 instances.
+
+4. Without key pair ,you can't access instance in RDP ( Remote
+Desktop Connection ) or SSH(linux).
+
+5. There is a limit to create EC2 instances per region - 20
+instances per region. You can submit a request to AWS to increase
+it.
+
+
+
+
+
+
+EC2 STATUS CHECKS
+-------------------------------------------------------------
+
+1. By default, AWS EC2 service performs automated check every
+one minute.
+If the instance state is pending, it is considered as unhealthy
+state when EC2 does not get any response from your instance.
+This is done on every running instances to identify any hardware
+or software issue.
+
+2. Status check is built into aws  ec2 instance. They cannot be
+configured,deleted, or disabled.
+
+
+
+
+
+
+STEPS TO LAUNCH AN INSTANCE
+-----------------------------------------------------
+
+
+An AWS instance can be launched in 7 steps:
+
+Step 1. Choose an AMI ( OS/platform )
+
+Amazon has preinstalled all types of OS on multiple servers. And
+they take a backup of server(image) and keep at some location in
+data centers.
+When we select an AMI ,we get a soft copy of OS from that image.
+
+There are 4  options to choose an AMI :
+
+1. Quick start : this includes most commonly used AMIs provided 
+by amazon itself.
+
+2. My AMIs :  custom EMIs that you have created as per your need.
+
+3. AWS MarketPlace : place from where you can purchase various 
+ AMIs that you need in your instance.
+
+4. Community AMIs : Here you will find  a number of AMIs belonging
+ to a particular community. e.g AMIs belonging to Red Hat community.
+
+
+
+Step 2: Choose an instance type. ( configuration )
+
+selecting various configurations of CPU,memory,storage, and
+networking capacity for your instance known as instance types.
+
+
+
+Step 3: Configure Instance details.
+
+create  network ( HTTP,HTTPS,SSH) , port no, IP address, etc.
+
+
+
+Step 4: Add Storage. ( number of instances)
+
+
+Step 5: Add Tags.
+
+ You will launch many instances.You will need to define a name
+ so that you can recognise it.
+
+
+Step 6: Configure Security Group.
+
+Step 7: Review -> Launch.
